@@ -13,7 +13,7 @@ var memoryData = [
 
 var _wrapData = function() {
   var dataCopy = $.extend(true, [], memoryData);
-  return new recline.Backend.Memory.Store(dataCopy);
+  return recline.Backend.Memory.Store(dataCopy);
 }
 
 test('basics', function () {
